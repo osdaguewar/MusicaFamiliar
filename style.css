@@ -1,0 +1,31 @@
+#slideshow img {
+  display: none;
+}
+#slideshow img:first-child {
+  display: block;
+}
+#slideshow img {
+  display: none;
+  transition: all 0.5s;
+}
+#slideshow img {
+  display: none;
+  animation: slideshow 20s infinite;
+}
+
+@keyframes slideshow {
+  0% {
+    display: block;
+  }
+  100% {
+    display: none;
+  }
+
+}
+/* Slayder */
+.carousel img {
+  width: 800px;
+  height: 500px;
+  object-fit: cover;
+}
+
