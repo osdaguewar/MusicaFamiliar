@@ -24,8 +24,8 @@
 }
 /* Slayder */
 .carousel img {
-  width: 800px;
-  height: 500px;
+  width: 500px;
+  height: 200px;
   object-fit: cover;
 }
 .reseña {
@@ -38,6 +38,91 @@
 }
 
 #galeria img {
-  max-width: 300px;
-  margin: 10px;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin: 09px;
 }
+#historia {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+#historia h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+#historia h2 {
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+ body {
+  background-color: rgb(70, 119, 115);
+ }
+ .custom-size {
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+}
+/* Estilos para el contenedor principal */
+main {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.5;
+  }
+  
+  /* Estilos para el encabezado */
+  header h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  }
+  
+  /* Estilos para la navegación */
+  nav {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  }
+  nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  }
+  nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: block;
+  padding: 20px;
+  }
+  nav a:hover {
+  background-color: #444;
+  }
+  
+  /* Estilos para las secciones */
+  section {
+  margin-bottom: 20px;
+  }
+  section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  }
+.navbar-brand {
+  animation: fade-in 5s linear infinite alternate;
+
+}
+@keyframes fade-in {
+  0%   {background-color: blue;}
+  30%  {background-color: red;}
+  60%  {background-color: purple;}
+  100% {background-color: pink;}
+}
+
