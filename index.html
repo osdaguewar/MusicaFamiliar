@@ -39,7 +39,7 @@
       </nav>
       
     </header>
-
+ 
     <div id="slideshow" class="carousel slide" data-ride="carousel">
       <!-- Indicadores -->
       <ol class="carousel-indicators">
@@ -47,13 +47,27 @@
         <li data-target="#slideshow" data-slide-to="1"></li>
       </ol>
       <!-- Imágenes -->
+      <style>
+        .image-description {
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+          color: white;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        </style>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="imagenes/Elvis1.jpg" alt="Foto 1">
+          <div class="image-description">Este artista es un músico increíblemente talentoso, especialmente en el piano y la percusión. Además de tener una sólida formación en contabilidad y gerencia pública, este artista tiene una pasión y dedicación por la música que se refleja en su increíble habilidad y maestría en los instrumentos. Cada vez que escuchamos a este artista tocar, quedamos impresionados por su habilidad y su capacidad para transmitir emoción y pasión a través de su música.</div>
         </div>
         <div class="carousel-item">
           <img src="imagenes/Elvis2.jpg" alt="Foto 2">
-        </div>
+          <div class="image-description fade-in" onmouseover="this.style.opacity=1">Este artista es un músico excepcionalmente talentoso que combina su experiencia y conocimientos en contabilidad y gerencia pública con su pasión y dedicación a la música. Su habilidad en el piano y la percusión es sorprendente y siempre deja a su audiencia impresionada con su maestría y capacidad para transmitir emoción y pasión a través de su música. Si quieres disfrutar de una verdadera experiencia musical, no puedes perderte la oportunidad de escuchar a este artista tocar en vivo.</div>
+          </div>
       </div>
       <!-- Controles -->
       <a class="carousel-control-prev" href="#slideshow" role="button" data-slide="prev">
@@ -65,6 +79,7 @@
         <span class="sr-only">Siguiente</span>
       </a>
     </div>
+ 
     
   </body>
 </html>
