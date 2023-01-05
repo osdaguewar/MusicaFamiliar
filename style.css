@@ -32,3 +32,12 @@
   opacity: 0;
   transition: opacity 0.5s;
 }
+#galeria {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#galeria img {
+  max-width: 300px;
+  margin: 10px;
+}

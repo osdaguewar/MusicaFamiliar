@@ -16,20 +16,20 @@
     <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Orquesta de Salsa y Charanga</a>
+        <a class="navbar-brand" href="#">Elvis Guerra/Music</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Inicio</a>
+              <a class="nav-link" href="#">Historias</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Músicos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Galería</a>
+              <a class="nav-link" href="galeria.html">Galería</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contacto</a>
@@ -69,6 +69,8 @@
           <div class="image-description fade-in" onmouseover="this.style.opacity=1">Este artista es un músico excepcionalmente talentoso que combina su experiencia y conocimientos en contabilidad y gerencia pública con su pasión y dedicación a la música. Su habilidad en el piano y la percusión es sorprendente y siempre deja a su audiencia impresionada con su maestría y capacidad para transmitir emoción y pasión a través de su música. Si quieres disfrutar de una verdadera experiencia musical, no puedes perderte la oportunidad de escuchar a este artista tocar en vivo.</div>
           </div>
       </div>
+
+      
       <!-- Controles -->
       <a class="carousel-control-prev" href="#slideshow" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -79,7 +81,20 @@
         <span class="sr-only">Siguiente</span>
       </a>
     </div>
- 
+    <script>
+      var elementos = document.getElementsByClassName('reseña');
+      for (var i = 0; i < elementos.length; i++) {
+        elementos[i].onmouseover = function() {
+          this.style.opacity = 1;
+        }
+      }
+    </script>
+
+<div id="instagram-photos">
+
+
+</div>
+
     
   </body>
 </html>
