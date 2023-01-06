@@ -126,3 +126,41 @@ main {
   100% {background-color: pink;}
 }
 
+
+  #introduccion {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    }
+    
+    #biografia {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    }
+    #carrera {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      }
+      #impacto {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+     }
+      
+     footer {
+      background-color: #333; /* cambia el color de fondo a tu elección */
+      color: white; /* cambia el color del texto a tu elección */
+      padding: 20px;
+      bottom: 0;
+      width: 150%;
+      height: 50px;
+    }
+    
+    .social-icons a {
+      display: inline-block; /* muestra los iconos en línea */
+      margin: 0 10px; /* agrega margen a la derecha de cada icono */
+    }
+    
+    .social-icons i {
+      font-size: 1.5em; /* aumenta el tamaño del icono */
+      color: white; /* cambia el color del icono a tu elección */
+    }
+   
