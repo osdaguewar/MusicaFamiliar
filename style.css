@@ -145,14 +145,7 @@ main {
         padding: 20px;
      }
       
-     footer {
-      background-color: #333; /* cambia el color de fondo a tu elección */
-      color: white; /* cambia el color del texto a tu elección */
-      padding: 20px;
-      bottom: 0;
-      width: 150%;
-      height: 50px;
-    }
+    
     
     .social-icons a {
       display: inline-block; /* muestra los iconos en línea */
@@ -164,9 +157,5 @@ main {
       color: white; /* cambia el color del icono a tu elección */
     }
    
-    #tk-blob {
-
-      width: 50%;
-      height: 40%;
-
-    }
+   
+    

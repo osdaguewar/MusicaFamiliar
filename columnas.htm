@@ -6,11 +6,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script>
-      $('.carousel').carousel()
-    </script>
-        
-    <!-- Bootstrap CSS -->
+       <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   
@@ -19,8 +15,8 @@
 <body>
     <header>
     
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
           <a class="navbar-brand" href="index.html">Elvis Guerra/Music</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,5 +47,150 @@
     
         </script>
       </header>
+      <!--marca de agua de las secciones-->
+      <img src="imagenes/pianofondo.jpg" id="marca-de-agua">
+
+<!--Columna de opinion-->
+<h1 style="font-family: Lobster">opinion</h1>
+<h1 style="font-family: Lobster">Titulo columna</h1>
+<h4 id="fecha-actual"></h4>
+
+<script>
+  // Obtener la fecha actual
+  var fecha = new Date();
+
+  // Obtener el elemento <h3>
+  var elementoH4 = document.getElementById("fecha-actual");
+
+  // Asignar la fecha a la etiqueta <h3>
+  elementoH4.innerHTML = fecha;
+</script>
+
+
+      </header>
+    <div class="contenedor">
+      <div class="seccion-izquierda">
+        <!-- contenido de la sección izquierda -->
+        <img src="imagenes/Elvis10.jpeg" id="imagenes-columnas">
+
+      </div>
+      <div class="seccion-centro">
+        <!-- contenido de la sección central -->
+        <section id="texto columna">
+          
+          <p>Elvis Alfonso Guerra Hernández es un músico cordobés de gran talento y amplia formación. Nacido en Montería en 1976, proviene de una familia de músicos y desde temprana edad mostró sus habilidades para el arte. A los 9 o 10 años comenzó a seguir rítmicamente las melodías que escuchaba en la radio y, a los 13 años, fue invitado a formar parte del Valet Folklórico de José Pacheco, una de las agrupaciones más destacadas de la región. Durante su formación académica, Elvis estudió trompeta, pero una condición médica lo obligó a desistir del instrumento. Sin embargo, su pasión por la música lo llevó a integrar el grupo folclórico de su colegio, donde interpretaba diferentes instrumentos, como tambora, tambor alegre, guache, llamador y maracas. Además, estudió piano con el maestro Tiburcio Romero Garcés en la Escuela de Bellas Artes.
+
+            En 1992, Elvis fue llamado a formar parte de la Orquesta Grupo Bongo como percusionista menor y, dos años más tarde, fue invitado a ser pianista de la Orquesta Wanany. En ese tiempo, también fue llamado a integrar la Gran Orquesta de Colombia y la Orquesta de la Universidad de Córdoba. Gracias a su dedicación y talento, Elvis ha sido parte de varias agrupaciones de diferentes géneros, como conjuntos vallenatos, mariachis y Caballo de Palo, de la que afirma es un placer hacer parte.
+            
+            En el año 2000, Elvis obtuvo el Conga de Oro en los Carnavales de Barranquilla como percusionista menor de la Orquesta Franja. Al año siguiente, se convirtió en pianista de la misma orquesta y obtuvo el mismo galardón en la categoría "Rescate a lo Nuestro". Además de su participación en estas agrupaciones, Elvis ha realizado numerosas grabaciones y ha sido co-productor musical en la última producción musical de la Banda San Gerónimo de Montería.
+            
+            A pesar de su destacada carrera musical, Elvis también es Contador Público y ha alternado esta profesión con su pasión por la música. Además, ha obtenido su tarjeta profesional en música a través del Ministerio de Educación. En los últimos dos años, ha sido instructor y director musical del SENA regional de Córdoba, donde ha demostrado de lo que son capaces los cordobeses.</p>
+        </section>
+        <section id="Escrito por">
+          <h3>Elvis Guerra especialista en gerencia publica</h3>
+          <p>Elvis Alfonso Guerra Hernández es un músico cordobés de gran talento y amplia formación. Desde temprana edad, mostró sus habilidades para el arte y, a los 13 años, fue invitado a formar parte del Valet Folklórico de José Pacheco. Desde entonces, ha participado en numerosas orquestas y conjuntos de diferentes géneros, destacándose como pianista y percusionista menor. Algunas de las agrupaciones en las que ha tocado son Grupo Bongo, Wanany, Gran Orquesta de Colombia, conjuntos vallenatos, mariachis y Caballo de Palo. Además de su carrera musical, Elvis es Contador Público y ha sido instructor y director musical del SENA regional de Córdoba en los últimos dos años. Gracias a su dedicación y talento, Elvis ha logrado convertirse en un músico respetado y reconocido en la región de Córdoba.</p>
+        </section>
+
+      </div>
+      <div class="seccion-derecha">
+        <!-- contenido de la sección derecha -->
+        <!-- SnapWidget
+      <iframe src="https://snapwidget.com/embed/1021288" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:200px; height: 100px;"></iframe>
+      -->
+    </div>
+    </div>
+    <!--Pie de pagina-->
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a href="https://www.instagram.com/elvisguerra_/" class="nav-link px-2">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.facebook.com/elvispercusion" class="nav-link px-2">
+            <i class="fab fa-facebook-f fa-lg"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="https://twitter.com/elvispercusion" class="nav-link px-2">
+            <i class="fab fa-twitter fa-lg"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+    </footer>
+    
+    
+<style>
+  .seccion-izquierda {
+  float: left;
+  width: 20%; /* o el ancho que desees */
+  margin: 20px;
+}
+
+.seccion-centro {
+  float: left;
+  width: 60%; /* o el ancho que desees */
+  margin: 20px;
+}
+
+
+#imagenes-columnas {
+  width: 100%; /* o el ancho que desees */
+  height: auto; /* para que la altura se ajuste automáticamente al ancho */
+  border: 1px solid #333; /* para agregar un borde a la imagen */
+}
+h1 {
+  display: block; /* para que el elemento ocupe todo el ancho disponible */
+  width: 50%; /* o el ancho que desees */
+  margin: 0 auto; /* para centrar el elemento horizontalmente */
+  font-family: Lobster;
+}
+#marca-de-agua {
+  position: absolute; /* para que la imagen no ocupe espacio en la página */
+  top: 0; /* para que la imagen esté alineada con el borde superior de la página */
+  left: 0; /* para que la imagen esté alineada con el borde izquierdo de la página */
+  width: 100%; /* para que la imagen ocupe todo el ancho disponible */
+  height: auto; /* para que la altura se ajuste automáticamente al ancho */
+  z-index: -1; /* para que la imagen quede detrás de los demás elementos de la página */
+  opacity: 0.9; /* para darle transparencia a la imagen */
+}
+.seccion-derecha {
+    position: relative; /* hace que los elementos absolutos sean posicionados en relación a esta sección */
+  }
+  .seccion-derecha .snapwidget-widget {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200%;
+    height: auto;
+  }
+  .contenedor {
+    height: 100%; /* para que el contenedor ocupe toda la altura disponible */
+  }
+  footer {
+    clear: both; /* para que el pie de página se ubique debajo de las secciones */
+    height: 200px; /* para darle un alto fijo al pie de página */
+    background-color: #333; /* para darle un color de fondo al pie de página */
+    color: #fff; /* para darle un color de texto al pie de página */
+  }
+  p {
+  color: white;
+}
+h1{
+  color: white;
+}
+h3{
+  color: white;
+}
+h4 {
+  color: white;
+  width: 50%; /* o el ancho que desees */
+  margin: 0 auto; /* para centrar el elemento horizontalmente */
+  font-size: 10px;
+}
+ 
+</style>      
 </body>
 </html>
