@@ -164,3 +164,9 @@ main {
       color: white; /* cambia el color del icono a tu elección */
     }
    
+    #tk-blob {
+
+      width: 50%;
+      height: 40%;
+
+    }
