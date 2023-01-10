@@ -44,7 +44,7 @@
   margin: 09px;
 }
 #historia {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   font-family: Arial, sans-serif;
 }
@@ -62,7 +62,7 @@
 }
 
  body {
-  background-color: rgb(70, 119, 115);
+  background-color: black;
  }
  .custom-size {
   width: 300px;
@@ -121,9 +121,9 @@ main {
 }
 @keyframes fade-in {
   0%   {background-color: blue;}
-  30%  {background-color: red;}
-  60%  {background-color: purple;}
-  100% {background-color: pink;}
+  30%  {background-color: white;}
+  60%  {background-color: green;}
+  100% {background-color: red;}
 }
 
 
