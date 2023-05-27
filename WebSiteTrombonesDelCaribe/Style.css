@@ -1,0 +1,13 @@
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alinea la imagen en la parte superior */
+  height: 100vh; /* Ajusta la altura del carrusel al 100% del viewport */
+  margin-top: 20px; /* Agrega un espacio superior entre el navbar y el carrusel */
+}
+
+.carousel-item img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
