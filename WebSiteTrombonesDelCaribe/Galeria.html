@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Fotos</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    
+    .card {
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: scale(1.05);
+    }
+    
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+    
+    .modal-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    
+    .modal-image {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    footer ul li {
+      margin-bottom: 10px;
+    }
+
+    footer ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+          <a class="navbar-brand" href="Index.html">Trombones Del Caribe</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="Quienes.html">Quiénes Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Eventos.html">Eventos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contactanos.html">Contáctanos</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+  <div class="container">
+    <h1>Galería de Fotos</h1>
+    
+    <div class="gallery-container">
+      <div class="card">
+        <img src="Imagenes/TRb1.jpg" alt="Foto 1">
+      </div>
+      <div class="card">
+        <img src="Imagenes/TRB2.jpg" alt="Foto 2">
+      </div>
+      <div class="card">
+        <img src="Imagenes/TRB3.jpg" alt="Foto 3">
+      </div>
+      <!-- Agrega más tarjetas según tus fotos -->
+      <div class="card">
+        <img src="Imagenes/TRB4.jpg" alt="Foto 4">
+      </div>
+      <div class="card">
+        <img src="Imagenes/TRB5.jpg" alt="Foto 5">
+      </div>
+      <!-- Agrega más tarjetas según tus fotos -->
+    </div>
+    
+    <!-- Modal para mostrar la imagen en grande -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <img src="" class="modal-image" alt="Imagen en grande">
+      </div>
+    </div>
+  </div>
+   <!--Pie de pagina-->
+   <footer class="bg-dark text-light">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col">
+          <h4>Síguenos en redes sociales</h4>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/tu_orquesta" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/tu_orquesta" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.twitter.com/tu_orquesta" target="_blank"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Información de contacto</h4>
+          <p>Trombones del Caribe</p>
+          <p>Dirección de la orquesta</p>
+          <p>Teléfono: +1234567890</p>
+          <p>Email: info@tuorquesta.com</p>
+        </div>
+        <div class="col">
+          <h4>Enlaces rápidos</h4>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.card').click(function() {
+        var imgSrc = $(this).find('img').attr('src');
+        $('#modal').find('.modal-image').attr('src', imgSrc);
+        $('#modal').show();
+      });
+      
+      $('#modal').click(function() {
+        $(this).hide();
+      });
+    });
+  </script>
+  
+</body>
+</html>
